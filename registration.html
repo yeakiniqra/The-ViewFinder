@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="reg">
+        <header>Registration</header>
+
+    <form action="#">
+        <div class="form-first">
+            <div class="personal">
+                <span class="title">Personal Details</span>
+
+                <div class="fields">
+                    <div class="input-fields">
+                        <label>Full Name :</label>
+                        <input type="text" placeholder="Enter Your name" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Registration ID:</label>
+                        <input type="text" placeholder="Enter Your ID" required>
+                    </div>
+                    <div class="input-fields">
+                        <label for="department">Department:</label>
+                        <select name="department" id="dept"> 
+                            <option value="CSE">CSE</option> 
+                            <option value="CIVIL">CIVIL</option> 
+                            <option value="EEE">EEE</option> 
+                            <option value="Pharmacy">Pharmacy</option> 
+                            <option value="English">English</option> 
+                            <option value="BBA">BBA</option> 
+                            <option value="Architecture">Architecture</option> 
+                            <option value="Faculty">Faculty</option> 
+                            <option value="Alumni">Alumni</option> 
+                        </select>
+                    </div>
+                    <div class="input-fields">
+                        <label>Semester:</label>
+                        <input type="text" placeholder="Enter Your Semester" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Email:</label>
+                        <input type="text" placeholder="Enter Your E-mail" required>
+                    </div>
+                    <div class="input-fields">
+                        <label>Contact No:</label>
+                        <input type="text" placeholder="Enter Your Contact No." required>
+                    </div>
+                </div>
+                <button onclick="nextStep()" class="nxtbtn">
+                    <span class="btnnxt">Next</span>
+                    <iconify-icon  class="icon" icon="carbon:next-outline"></iconify-icon>
+                </button>
+            </div>
+        </div>
+        
+        <div class="form-second" style="display: none;">
+            <div class="submission">
+                <span class="title">Submission</span>
+
+                    <div class="input-fields">
+                        <label for="category">Select Category</label>
+                        <select name="category" id="catg"> 
+                            <option value="DSLR">DSLR/SLR Photography</option> 
+                            <option value="mobile">Mobile Photography</option> 
+                            <option value="uap">UAP Diary</option> 
+                        </select>
+                    </div>
+                    <div class="input-fields">
+                        <h4>Image #1</h4>
+                        <label id="title">Title</label>
+                        <input type="text" placeholder="Enter a Title" required>
+                    </div>
+                    <p class="up-rules">*rename your photo with your ID and category.Ex.19201120_Cat-1_photo-1</p>
+                    <div class="upload">
+                        <label for="photo">Add a Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+
+                    <div class="input-fields">
+                        <h4>Image #2</h4>
+                        <label id="title">Title</label>
+                        <input type="text" placeholder="Enter a Title" required>
+                    </div>
+
+                    <div class="upload">
+                        <label for="photo">Add a Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                    <div class="input-fields">
+                        <h4 id="title">Image #3</h4>
+                        <label>Title</label>
+                        <input type="text" placeholder="Enter a Title" required>
+                    </div>
+
+                    <div class="upload">
+                        <label for="photo">Add a Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                        
+                    </div>
+                
+                
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="back()" class="Back">Back</button>
+                    <button type="button" onclick="submitForm()" class="submit">Submit</button>
+                  </div>
+                  
+            </div>
+        </div>
+
+
+
+    </form>
+    <a href="index.html" class="home-back">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

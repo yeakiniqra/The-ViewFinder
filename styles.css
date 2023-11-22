@@ -1,0 +1,316 @@
+
+
+@font-face {
+  font-family: 'ARANGO' ;
+  src: url(Fonts/ARANGO.ttf);
+}
+@font-face {
+  font-family: 'Avocalipse';
+  src: url(Fonts/Avocalipss\ Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Herova';
+  src: url(Fonts/Herova.ttf);
+}
+
+@font-face {
+  font-family: 'nessyn';
+  src: url(Fonts/Nessyn\ Sentry.ttf);
+}
+
+
+body{
+	/* 
+	font-weight: 500;
+	color: #fff;
+	background-color: #1f2029;
+	overflow-x: hidden;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  width: 100%; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+ 
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image:url(img/main-img.webp);
+  background-size: cover;
+  background-position: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 250px;
+  cursor: pointer;
+  color: #fff;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: azure;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.navbar ul li::after{
+  content: '';
+  height: 10px;
+  width: 0;
+  background: #bd212e;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.home{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: azure;
+}
+
+.home h1{
+  font-family: 'ARANGO','Poppins';
+  font-size: 150px;
+  letter-spacing: 10px;
+}
+
+.home h4{
+  font-family: 'Avocalipse';
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+}
+
+button {
+  width: 500px;
+  padding: 25px 25px;
+  text-align: center;
+  margin: 80px auto; 
+  border-radius: 55px;
+  font-weight: bold;
+  border: 2px solid #bd212e;
+  background: transparent;
+  cursor: pointer;
+  position: absolute; 
+  color: #fff;
+  top: 60%;
+  font-size: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.2s ease-in-out; 
+  box-shadow: 0 0 0 rgba(189, 33, 46, 0);
+}
+
+button:hover {
+  box-shadow: 0 0 40px rgba(230, 59, 73, 0.7); 
+  background-color: #bd212e;
+}
+
+.about {
+    min-height: 100vh;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1f2029;
+    
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+.about header {
+  font-family: 'Herova';
+   font-size: 100px;
+   position: absolute;
+  top: 5%;
+  left: 5;
+  margin: 20px;
+  letter-spacing: 70px;
+}
+
+.event-description {
+  margin-left: 60px;
+  margin-top: 5%; /* Adjust the top margin as needed */
+}
+
+.event-description h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f3eaea;
+  text-decoration: underline;
+}
+
+.event-description p {
+  font-size: 38px;
+  line-height: 1.7;
+  color: #c9c2c2; 
+}
+
+.back-home {
+  color: #f2f2f2;
+  font-size: 30px;
+  text-align: center; 
+  position: fixed;
+  bottom: 10px; 
+  left: 90%;
+  width: 300px;
+  padding: 25px ;
+  box-shadow: 0 0 0 rgba(189, 33, 46, 0);
+  text-align: center;
+  margin: 20px auto; 
+  background-color: #bd212e;
+  border-radius: 55px;
+  transition: 0.2s ease-in-out; 
+  transform: translateX(-50%); 
+  text-decoration: none;
+  box-shadow: 0 0 0 rgba(189, 33, 46, 0);
+  z-index: 1;
+}
+.back-home:hover {
+  box-shadow: 0 0 40px rgba(230, 59, 73, 0.7); 
+  background-color: #bd212e;
+}
+
+
+.contact {
+  
+  min-height: 100vh;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1f2029;
+  overflow-x: hidden;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+}
+
+.contact header {
+  font-family: 'nessyn';
+  font-size: 100px;
+  position: absolute;
+ top: 2%;
+ left: 5;
+ margin: 20px;
+ letter-spacing: 50px;
+}
+
+.contact-form {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.contact-form h2 {
+  margin-top: 90px;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.contact-form p:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+.contact-form p strong {
+  font-weight: bold;
+}
+
+.contact-form p:not(:last-child) {
+  border-bottom: 1px solid #ccc; /* Add a border between contact entries */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.contact-form a {
+  color: #0078d4; /* Blue color for links */
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+.contact-form a:hover {
+  color: #0056b3; /* Darker blue color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+
+.contact-links {
+  margin-top: 30px;
+  padding: 20px;
+  
+  border-radius: 10px;
+  text-align: center; /* Center-align the links */
+}
+
+.contact-links h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact-links p {
+  font-size: 10px;
+  color: #555;
+}
+
+.contact-links a {
+
+  text-decoration: none;
+  color: #f8fbfd; 
+  margin-right: 40px;
+}
+
+.contact-links a:hover {
+  color: #bd212e;
+}
+
+.contact-links i {
+  font-size: 74px;
+  vertical-align: middle;
+}
